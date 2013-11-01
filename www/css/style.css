@@ -433,7 +433,7 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 }
 .block_filter_apart .filter_form{
 	float: left;
-	padding: 0 0 8px;
+	padding: 0 0 10px;
 	border-bottom: 1px solid #a6a9b2;
 	position: relative;
 }
@@ -497,6 +497,9 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 	height: 13px;
 	vertical-align: middle;
 }
+.block_filter_apart .filter_form p{
+	margin: 0 0 10px;
+}
 .block_filter_apart .filter_form  h5.title_number:before{
 	background-position: -163px -25px;
 	width: 9px;
@@ -515,7 +518,7 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 }
 .block_filter_apart .filter_form  h5.title_property,
 .block_filter_apart .filter_form  h5.title_budget_filter{
-	margin-top: 0;
+	margin: 0 0 8px;
 }
 .block_filter_apart .filter_form  select{
 	width: 176px;
@@ -580,7 +583,7 @@ ul.paginator_room li a.active{
 	font-size: 14px;
 	font-weight: bold;
 	color: #313f52;
-	border-radius: 5px;
+	border-radius: 7px;
 	bottom: 13px;
 	width: 113px;
 	padding: 0;
@@ -658,7 +661,7 @@ h3.subtitle{
 	width: 298px;
 	font-size: 18px;
 	color: #232325;
-	padding: 12px 10px 8px;
+	padding: 11px 10px 9px;
 	box-shadow: #FCFCFC 0 -4px 10px inset, #b0b0b0 1px 0 0;
 	border-bottom: 1px solid #d2d2d0;
 	background: #f9f9f9; /* Old browsers */
@@ -1100,7 +1103,6 @@ ul.services li p{
 	border-top-color: #d2d2d2;
 	margin: 0 0 0 8px;
 	padding: 0;
-	box-shadow: 0 2px 3px #ddd inset;
 }
 .sidebar aside.social ul li:first-child{
 	margin: 0;
@@ -1111,6 +1113,7 @@ ul.services li p{
 	width: 92px;
 	height: 36px;
 	background-color: #fff;
+	box-shadow: 0 2px 3px #ddd inset;
 }
 .sidebar aside.social ul li a.fb{
 	background:#fff url(../images/fb_icon.jpg) no-repeat center;
