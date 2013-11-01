@@ -50,7 +50,7 @@
 					<form id="decription_property" action="#">
 						<h4>Decription of the property</h4>
 						<div class="col1">
-							<div class="spacer">
+							<div class="type_property">
 								<h5>Type of property</h5>
 								<select name="" id="">
 									<option value="">Lorem.</option>
@@ -73,12 +73,22 @@
 									<option value="">Odit.</option>
 									<option value="">Corrupti.</option>
 								</select>
+							</div>
+							<div class="surface block">
 								<h5>Surface:</h5>
 								<p><input type="text"/>m<sup>2</sup></p>
 							</div>
+							<div class="dpe block">
+								<h5>DPE:</h5>
+								<p><input type="text"/>kWhep/m<sup>2</sup>.year</p>
+							</div>
+							<div class="ghg block">
+								<h5>GHG:</h5>
+								<p><input type="text"/>KgCO<sub>2</sub>/m<sup>2</sup>.year</p>
+							</div>
 						</div>
 						<div class="col2">
-							<div class="spacer">
+							<div class="location block">
 								<h5>Location</h5>
 								<select name="" id="">
 									<option value="">Lorem.</option>
@@ -96,6 +106,129 @@
 								</select>
 								<textarea name="" id="" cols="30" rows="10"></textarea>
 							</div>
+							<div class="elevator block">
+								<h5>Elevator:</h5>
+								<div class="col1">
+									<label><input type="radio" checked name="elevator" value="yes">Yes</label>	
+								</div>
+								<div class="col2">
+									<label><input type="radio" name="elevator" value="no">No</label>	
+								</div>
+							</div>
+							<div class="balcony block">
+								<h5>Balcony:</h5>
+								<div class="col1">
+									<label><input type="radio" checked name="balcony" value="yes">Yes</label>
+								</div>
+								<div class="col2">
+									<label><input type="radio" name="balcony" value="no">No</label>
+								</div>
+							</div>
+						</div>
+						<div class="col_full radio_btns">
+							<div>
+								<h5>Available:</h5>
+								<label><input type="radio" checked name="available" value="unspecified">Unspecified</label>
+								<label><input type="radio" name="available" value="immediately">Immediately</label>
+								<label><input type="radio" name="available" value="dote">Dote</label>	
+							</div>
+							<div>
+								<h5>Condo:</h5>
+								<label><input type="radio" checked name="condo" value="unspecified">Unspecified</label>
+								<label><input type="radio" name="condo" value="yes">Yes</label>
+								<label><input type="radio" name="condo" value="no">No</label>	
+							</div>
+							<div>
+								<h5>Location:</h5>
+								<label><input type="radio" checked name="location" value="unspecified">Unspecified</label>
+								<label><input type="radio" name="location" value="ground_floor">Ground floor</label>
+								<label><input type="radio" name="location" value="floor">Floor</label>
+								<label><input type="radio" name="location" value="in_house">In house</label>	
+							</div>
+							<div>
+								<h5>Kitchen:</h5>
+								<label><input type="radio" checked name="kitchen" value="independent">Independent</label>
+								<label><input type="radio" name="kitchen" value="american">American</label>
+								<label><input type="radio" name="kitchen" value="furnished">Furnished</label>
+								<label><input type="radio" name="kitchen" value="equipped">Equipped</label>	
+								<label><input type="radio" name="kitchen" value="kitchenette">Kitchenette</label>	
+							</div>
+						</div>
+						<div class="col_full rooms">
+							<div>
+								<h5>Number of room(s):</h5>
+								<ul class="paginator_room">
+									<li><a href="#" class="active">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5+</a></li>
+								</ul>
+							</div>
+							<div>
+								<h5>Number of toilet(s):</h5>
+								<ul class="paginator_room">
+									<li><a href="#" class="active">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5+</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col1 line_selects">
+							<div class="heating block">
+								<h5>Heating:</h5>
+								<select name="" id="">
+									<option value="">Wood</option>
+									<option value="">Ipsum.</option>
+									<option value="">Porro.</option>
+									<option value="">Odit.</option>
+									<option value="">Corrupti.</option>
+								</select>
+							</div>
+							<div class="heating block">
+								<h5>Exterior feuters:</h5>
+								<select name="" id="">
+									<option value="">Garage</option>
+									<option value="">Ipsum.</option>
+									<option value="">Porro.</option>
+									<option value="">Odit.</option>
+									<option value="">Corrupti.</option>
+								</select>
+							</div>
+						</div>
+						<div class="col2 line_selects">
+							<div class="heating block">
+								<h5>Interior feuters:</h5>
+								<select name="" id="">
+									<option value="">Alarm</option>
+									<option value="">Ipsum.</option>
+									<option value="">Porro.</option>
+									<option value="">Odit.</option>
+									<option value="">Corrupti.</option>
+								</select>
+							</div>
+							<div class="heating block">
+								<h5>Near:</h5>
+								<select name="" id="">
+									<option value="">Downtown</option>
+									<option value="">Ipsum.</option>
+									<option value="">Porro.</option>
+									<option value="">Odit.</option>
+									<option value="">Corrupti.</option>
+								</select>
+							</div>
+						</div>
+						<div class="col_full photo">
+							<h5>Photo</h5>
+							<ul>
+								<li><img src="images/img_apartment.jpg" alt="" /></li>
+								<li><img src="images/img_apartment.jpg" alt="" /></li>
+								<li><img src="images/img_apartment.jpg" alt="" /></li>
+								<li><img src="images/img_apartment.jpg" alt="" /></li>
+								<li><img src="images/img_apartment.jpg" alt="" /></li>
+							</ul>
 						</div>
 					</form>
 				</div>
