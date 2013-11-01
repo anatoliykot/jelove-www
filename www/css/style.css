@@ -656,7 +656,7 @@ h3.page_subtitle{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e0e1e3',GradientType=0 ); /* IE6-8 */	
 }
 ul.services{
-	margin: 9px 0 30px;
+	margin: 7px 0 31px;
 }
 ul.services:after{
 	content: '';
@@ -683,6 +683,34 @@ ul.services li h5{
 	font-weight: bold;
 	color: #f88703;
 	margin: 0 0 7px;
+}
+.news ul{
+	width: 217px;
+	float: left;
+	margin: 9px 0 10px;
+}
+.news ul li{
+	margin: 0 0 8px;
+}
+.news ul li a{
+	color: #7f96a6;
+	text-decoration: underline;
+	font-style: italic;
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.news ul li a:before{
+	content: '';
+	display: inline-block;
+	background: url('../images/sprite.png') no-repeat -4px -80px;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: -4px;
+}
+.news ul li a:hover{
+	text-decoration: none;
 }
 
 /* ---------------- Sidebar -------------------*/
