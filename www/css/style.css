@@ -370,6 +370,15 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 .slider ul{
 	margin: 0 0 0 28px;
 }
+.slider.slider_three ul{
+	margin: 0 0 0 41px;
+}
+.slider.slider_three{
+	padding: 5px 10px;
+}
+.slider p{
+	line-height: 1;
+}
 .slider ul li{
 	float: left;
 	margin: 0 0 0 11px;
