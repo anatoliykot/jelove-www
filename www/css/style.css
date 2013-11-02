@@ -1311,6 +1311,7 @@ ul.services li p{
 	overflow: hidden;
 }
 .search_filter_block .search_filter input[type="submit"]{
+	cursor: pointer;
 	width: 118px;
 	margin: 20px auto 0;
 	border: 2px solid #c9c9d1;
