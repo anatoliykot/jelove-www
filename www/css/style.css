@@ -376,7 +376,7 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 .slider.slider_three{
 	padding: 5px 10px;
 }
-.slider p{
+.slider ul li p{
 	line-height: 1;
 }
 .slider ul li{
