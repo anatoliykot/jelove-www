@@ -1049,11 +1049,33 @@ ul.services li p{
 .block_single_top .description{
 	float: left;
 	margin: 0 0 0 10px;
-	width: 250px;
+	width: 240px;
+	color: #7d7d7d;
+}
+.block_single_top .description h3{
+	color: #F88705;
+	font-weight: bold;
+	margin: 0 0 20px;
 }
 .block_single_top .price_button{
 	float: right;
 	text-align: right;
+	margin: 30px 0 0;
+}
+.block_single_top .price_button .price{
+	color: #F88705;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+.block_single_top .price_button .view_phone{
+	font-size: 12px;
+	text-decoration: underline;
+	font-style: italic;
+	color: #7f96a8;
+}
+.block_single_top .price_button .contact_button{
+	margin: 45px 0 0;
 }
 /* -------------- end Single ----------------- */
 
