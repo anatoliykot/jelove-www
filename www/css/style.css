@@ -1331,6 +1331,9 @@ ul.services li p{
 	height: 36px;
 }
 
+.list_search_result .sorter_paginator{
+	margin: 0 0 3px;
+}
 .list_search_result .sorter{
 	float: left;
 }
@@ -1357,6 +1360,80 @@ ul.services li p{
 	height: 10px;
 	display: inline-block;
 	margin: 0 0 0 1px
+}
+.list_search_result .list_apartment > ul > li{
+	width: 100%;
+	border: 5px solid #eeeff1;
+	background: #fff;
+	box-shadow: 0 0 5px 1px #A2A2A2;
+	margin: 0 0 13px;
+	padding: 10px 8px 4px;
+	position: relative;
+	overflow: hidden;
+}
+.list_search_result .list_apartment li p.time_add{
+	position: absolute;
+	right: 6px;
+	top: 7px;
+	font-size: 12px;
+	font-style: italic;
+	color: #91a4b3;
+	text-decoration: underline;
+}
+.list_search_result .list_apartment li .img_search_result{
+	float: left;
+	text-align: center;
+	margin: 0 10px 0 0;
+}
+.list_search_result .list_apartment li .img_search_result .img_holder{
+	border: 1px solid #ccc;
+	background: #eaf3f8;
+	padding: 8px 7px 6px 8px;
+	width: 166px;
+}
+.list_search_result .list_apartment li .img_search_result .img_holder img{
+	border: 1px solid #656462;
+	box-shadow: 1px 1px 0 #248acc;
+	width: 100%;
+}
+.list_search_result .list_apartment li .img_search_result  a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #f78b0d;
+	position: relative;
+	padding: 5px 0 5px 23px;
+	display: inline-block;
+}
+.list_search_result .list_apartment li .img_search_result a:before{
+	content: '';
+	display: block;
+	background: url('../images/sprite.png') no-repeat -1px -117px;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 3px;
+	left:0;
+}
+.list_search_result .list_apartment li .price{
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1;
+	padding: 0;
+	margin: 0 0 7px;
+}
+.list_search_result .list_apartment li .price,
+.list_search_result .list_apartment li .address{
+	font-weight: bold;
+	color: #f78b0d;
+}
+.list_search_result .list_apartment li .share_button{
+	overflow: hidden;
+	margin: 10px 0 0;
+	text-align: right;
+}
+.list_search_result .list_apartment li .share_button li{
+	display: inline-block;
+	cursor: pointer;
 }
 /* ---------------- Footer ------------------- */
 .push,
