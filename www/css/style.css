@@ -1125,10 +1125,13 @@ ul.services li p{
 .block_single_bottom ul.single_page_tabs li span,
 .block_single_bottom ul.single_page_tabs li i{
 	display: inline-block;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
 .block_single_bottom ul.single_page_tabs li i{
 	background: url('../images/sprite.png') no-repeat;
+	position: relative;
+	bottom: 2px;
+	margin: 0 3px 0 0;
 }
 .block_single_bottom ul.single_page_tabs li .detail{
 	background-position: -163px -75px;
@@ -1140,10 +1143,17 @@ ul.services li p{
 	width: 12px;
 	height: 11px;	
 }
-.block_single_bottom ul.single_page_tabs li .photos{
+.block_single_bottom ul.single_page_tabs li .map{
 	background-position: -314px -75px;
 	width: 10px;
 	height: 14px;	
+}
+.block_single_bottom .left_description{
+	width: 350px;
+	padding: 10px;
+}
+.block_single_bottom .right_description{
+
 }
 /* -------------- end Single ----------------- */
 
