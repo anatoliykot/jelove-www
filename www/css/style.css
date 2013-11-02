@@ -1154,7 +1154,63 @@ ul.services li p{
 .sidebar aside.social ul li a.yt{
 	background:#fff url(../images/yt_icon.jpg) no-repeat center;
 }
-
+.sidebar aside.contact_agency{
+	border: 5px solid #eff0f2;
+	padding: 6px 7px 9px 7px;
+	background: #fff;
+}
+.sidebar aside.contact_agency h3{
+	font-size: 18px;
+	color: #232325;
+	margin: 0 0 9px;
+}
+.sidebar aside.contact_agency .img_partner{
+	margin: 0 10px 4px 3px;
+}
+.sidebar aside.contact_agency p{
+	margin: 0 0 5px;
+	font-size: 14px;
+}
+.sidebar aside.contact_agency ul.get_in_touch{
+	margin: 17px 0 21px;
+}
+.sidebar aside.contact_agency .get_in_touch li{
+	display: inline-block;
+	margin: 0 22px 0 0;
+	padding: 0;
+}
+.sidebar aside.contact_agency .get_in_touch li:last-child{
+	margin: 0;
+}
+.sidebar aside.contact_agency .get_in_touch li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+	font-family: Verdana, Arial, sans-serif;
+	vertical-align: middle;
+}
+.sidebar aside.contact_agency .get_in_touch li a i{
+	display: inline-block;
+	background: url('../images/sprite.png') no-repeat;
+	margin: 0 8px 0 0;
+	vertical-align: middle;
+}
+.sidebar aside.contact_agency .get_in_touch li a.contact_link i{
+	background-position: -89px -125px;
+	width: 15px;
+	height: 11px;
+}
+.sidebar aside.contact_agency .get_in_touch li a.contact_ads i{
+	background-position: -127px -125px;
+	width: 14px;
+	height: 11px;
+}
+.sidebar aside.contact_agency .get_in_touch li a.contact_website i{
+	background-position: -161px -120px;
+	width: 15px;
+	height: 16px;
+}
 /* ------------ Search result page---------------*/
 .search_filter_block{
 	width: 209px;
@@ -1395,7 +1451,7 @@ ul.services li p{
 	background: #fff;
 	box-shadow: 0 0 5px 1px #A2A2A2;
 	margin: 0 0 13px;
-	padding: 10px 8px 4px;
+	padding: 10px 8px 1px;
 	position: relative;
 	overflow: hidden;
 }
@@ -1429,8 +1485,9 @@ ul.services li p{
 	font-weight: bold;
 	color: #f78b0d;
 	position: relative;
-	padding: 5px 0 5px 23px;
 	display: inline-block;
+	padding: 6px 0 5px 13px;
+	margin: 3px 0 0;
 }
 .list_search_result .list_apartment li .img_search_result a:before{
 	content: '';
@@ -1440,7 +1497,7 @@ ul.services li p{
 	height: 18px;
 	position: absolute;
 	top: 3px;
-	left:0;
+	left:-15px;
 }
 .list_search_result .list_apartment li .price{
 	font-size: 16px;
@@ -1456,12 +1513,25 @@ ul.services li p{
 }
 .list_search_result .list_apartment li .share_button{
 	overflow: hidden;
-	margin: 10px 0 0;
+	margin: 8px 0 0;
 	text-align: right;
 }
 .list_search_result .list_apartment li .share_button li{
 	display: inline-block;
 	cursor: pointer;
+	margin: 0 0 0 14px;
+}
+a.contact_button{
+	display: inline-block;
+	width: auto;
+}
+a.contact_button i{
+	background: url(../images/sprite.png) -35px -115px;
+	width: 37px;
+	height: 25px;
+}
+.list_search_result .list_apartment li a.contact_button{
+	margin: 4px 0 0 11px;
 }
 /* ---------------- Footer ------------------- */
 .push,
