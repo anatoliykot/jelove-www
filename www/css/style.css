@@ -104,7 +104,8 @@ input[type="text"]{
 .description_property .block:after,
 .description_property .personal_info:after,
 header:after,
-ul.services:after{
+ul.services:after,
+.list_search_result .sorter_paginator:after{
 	content: ".";
 	display: block;
 	height: 0;
@@ -1236,17 +1237,30 @@ ul.services li p{
 	width: 413px;
 }
 .list_search_result .filter_sort{
-
+	margin: 0 0 7px;
+}
+.list_search_result .filter_sort ul{
+	font-size: 0;
+	position: relative;
+}
+.list_search_result .filter_sort ul:after{
+	content: '';
+	display: block;
+	height: 1px;
+	background: #dcdddf;
+	border: 1px solid #c1c1c1;
 }
 .list_search_result .filter_sort li{
 	font-size: 14px;
 	position: relative;
 	height: 30px;
-	float: left;
-	padding: 7px 5px 0 25px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 8px 5px 0 25px;
 	cursor: pointer;
-	border-left: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
 	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
 	background: #e1e1e1; /* Old browsers */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMWQxZDEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top,  #e1e1e1 0%, #d1d1d1 100%); /* FF3.6+ */
@@ -1257,22 +1271,26 @@ ul.services li p{
 	background: linear-gradient(to bottom,  #e1e1e1 0%,#d1d1d1 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-8 */
 }
+.list_search_result .filter_sort li:first-child{
+	border-left: 1px solid #c1c1c1;
+}
 .list_search_result .filter_sort li:before{
 	content: '';
 	display: block;
 	width: 100%;
-	height: 1px;
-	background: #fff;
+	border-top: 1px solid #fff;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 .list_search_result .filter_sort li.sort_list{
 	width: 76px;
+	padding-left: 32px;
 }
 .list_search_result .filter_sort li.sort_list:after,
 .list_search_result .filter_sort li.sort_photo:after,
-.list_search_result .filter_sort li.sort_individual:after{
+.list_search_result .filter_sort li.sort_individual:after,
+.list_search_result .filter_sort li.sort_professional:after{
 	content: '';
 	position: absolute;
 	display: block;
@@ -1282,28 +1300,92 @@ ul.services li p{
 	background-position: -163px -75px;
 	width: 12px;
 	height: 15px;
-	top: 5px;
-	left: 15px;
+	top: 6px;
+	left: 18px;
 }
 .list_search_result .filter_sort li.sort_photo:after{
 	background-position: -188px -78px;
 	width: 12px;
 	height: 11px;
-	top: 7px;
-	left: 15px;
+	top: 9px;
+	left: 10px;
 }
 .list_search_result .filter_sort li.sort_individual:after{
 	background-position: -212px -78px;
 	width: 13px;
 	height: 11px;
-	top: 5px;
-	left: 5px;
+	top: 10px;
+	left: 10px;
 }
-.list_search_result .filter_sort li.sort_individual:after{
-	
+.list_search_result .filter_sort li.sort_professional:after{
+	background-position: -239px -76px;
+	width: 15px;
+	height: 13px;
+	top: 8px;
+	left: 10px;
+}
+.list_search_result .filter_sort li.sort_list.active:after{
+	top: 13px;
+}
+.list_search_result .filter_sort li.sort_photo.active:after{
+	top: 15px;
+}
+.list_search_result .filter_sort li.sort_individual.active:after{
+	top: 16px;
+}
+.list_search_result .filter_sort li.sort_professional.active:after{
+	top: 13px;
+}
+.list_search_result .filter_sort li.active{
+	padding-top: 14px;
+	height: 38px;
+	border-left-color: #e1e1e1;
+	border-top-color: #e1e1e1;
+	border-bottom: 2px solid #e1e1e1;
+	bottom: -2px;
+	background: #d1d1d1; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QxZDFkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMWUxZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #d1d1d1 0%, #e1e1e1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d1d1), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d1d1d1 0%,#e1e1e1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d1d1d1 0%,#e1e1e1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d1d1d1 0%,#e1e1e1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d1d1d1 0%,#e1e1e1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-8 */
+}
+.list_search_result .filter_sort li.active:before{
+	border-color: #f6f6f6;
+	border-left: 1px solid #f6f6f6;
+	height: 36px;
 }
 
-
+.list_search_result .sorter{
+	float: left;
+}
+.list_search_result .sorter h5{
+	float: left;
+	color: #02263c;
+	padding: 2px 0 0;
+	margin: 0 8px 0 0;
+}
+.list_search_result .sorter select{
+	width: 174px;
+}
+.list_search_result .paginator{
+	float: right;
+	color: #333;
+}
+.list_search_result .paginator p{
+	font: 12px/1 Verdana, Arial, sans-serif;
+	padding: 2px 0 0;
+}
+.list_search_result .paginator a{
+	background: url('../images/sprite.png') no-repeat -269px -79px;
+	width: 8px;
+	height: 10px;
+	display: inline-block;
+	margin: 0 0 0 1px
+}
 /* ---------------- Footer ------------------- */
 .push,
 footer{
