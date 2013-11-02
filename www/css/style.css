@@ -1,4 +1,4 @@
-/* --------------- Reset ----------------- */
+	/* --------------- Reset ----------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -630,9 +630,13 @@ ul.paginator_room li a.active{
 .main_content p{
 	line-height: 1.4
 }
+.home_page .sidebar{
+	margin: 0;
+}
 .sidebar{
 	width: 298px;
 	float: left;
+	margin: 50px 0 0;
 }
 .content_holder{
 	border: 4px solid #eff0f2;
@@ -688,7 +692,7 @@ h3.page_subtitle{
 	font-size: 18px;
 	color: #232325;
 	padding: 7px 10px 10px;
-	margin: 10px 0 5px 3px;
+	margin: 10px 0 5px;
 	box-shadow: #FCFCFC 0 -4px 10px inset, #b0b0b0 1px 0 0;
 	border-bottom: 1px solid #d2d2d0;
 	background: #f9f9f9; /* Old browsers */
@@ -855,8 +859,8 @@ ul.services li p{
 	background: #eaf3f8;
 	padding: 5px;
 	box-shadow: 0 3px 4px #999;
-	margin: 0 0 0 12px;
 	border: 1px solid #cdcdcd;
+	margin: 0 0 0 12px;
 }
 .description_property .photo li img{
 	width: 100%;
@@ -994,14 +998,8 @@ ul.services li p{
 	background: linear-gradient(to bottom,  #ffffff 0%,#dedede 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedede',GradientType=0 ); /* IE6-8 */
 }
-.description_property.search_form {
-	margin: 34px 0 0;
-}
 .description_property.search_form > div {
 	width: 40%;
-}
-.description_property.search_form h4{
-	margin: 0 0 10px;
 }
 .description_property.search_form input[type="radio"]{
 	margin: 0 3px 0 0;
@@ -1015,6 +1013,47 @@ ul.services li p{
 .description_property.search_form .yes_no > div{
 	width: 77px;
 }
+
+/* ---------------- Single ------------------- */
+.block_single_top{
+	margin: 50px 0 0;
+	overflow: hidden;
+	padding: 9px 12px;
+	min-height: 170px;
+}
+.block_single_top .img_holder{
+	float: left;
+	width: 166px;
+	height: 130px;
+	padding: 8px;
+	background: #eaf3f8;
+	box-shadow: 0 3px 4px #999;
+	border: 1px solid #cdcdcd;
+}
+.block_single_top .img_holder img{
+	box-shadow: 1px 1px 0 #0f7fc7;
+	border: 1px solid #62615f;
+}
+.block_single_top .count_photos{
+	position: relative;
+	bottom: 4px;
+	width: 74px;
+	height: 22px;
+	line-height: 22px;
+	border:1px solid #c1c1c1;
+	font-size: 12px;
+	background: #f9922d;
+	text-align: center;
+	margin: 0 auto;
+}
+.block_single_top .description{
+	float: left;
+}
+.block_single_top .price_button{
+	float: right;
+}
+/* -------------- end Single ----------------- */
+
 /* ---------------- Sidebar ------------------- */
 .sidebar aside{
 	box-shadow: 0 0 7px #999;
