@@ -137,7 +137,6 @@ h5{
 	font-weight: bold;
 	color: #313f52;
 	border-radius: 7px;
-	width: 113px;
 	padding: 0;
 	cursor: pointer;
 	border: 1px solid #9dabb8;
@@ -1178,11 +1177,23 @@ ul.services li p{
 }
 .block_single_bottom .right_description .img_holder{
 	width: 100%;
-	height: 237px;
 	padding: 8px;
 	background: #eaf3f8;
 	box-shadow: 0 3px 4px #999;
 	border: 1px solid #cdcdcd;
+}
+.block_single_bottom .right_description .img_holder .prev{
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../images/sprite.png') no-repeat -211px -119px;
+	width: 7px;
+	height: 14px;
+}
+.block_single_bottom .right_description .img_holder .prev:hover{
+	background-position: -212px -144px;
+}
+.block_single_bottom .right_description .img_holder .next{
+	display: inline-block;
 }
 .block_single_bottom .right_description .img_holder img{
 	box-shadow: 1px 1px 0 #0f7fc7;
