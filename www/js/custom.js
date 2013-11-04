@@ -8,7 +8,6 @@ jQuery(document).ready(function($){
 	});
 
 	$('.video_slide').cycle({
-		slides: '>div',
 		next: '.next',
 		prev: '.prev',
 		fx: 'carousel',

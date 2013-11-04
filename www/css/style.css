@@ -1239,14 +1239,14 @@ ul.services li p{
 	box-shadow: 1px 1px 0 #0f7fc7;
 	border: 1px solid #62615f;
 }
-.block_single_bottom .right_description .video_slide{
-	margin: 25px 15px 0;
-}
 .slide_box_video {
 	position: relative;
 }
-.block_single_bottom .right_description .video_slide .cycle-slide{
-	margin: 0 3px;
+.block_single_bottom .right_description .video_slide{
+	margin: 25px 20px 0;
+}
+.block_single_bottom .right_description .video_slide img{
+	padding: 0 1px;
 }
 .block_single_bottom .right_description .slide_box_video > a{
 	background: url('../images/sprite.png') no-repeat;
