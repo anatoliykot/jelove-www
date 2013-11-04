@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 		next: '.next_button',
 		prev: '.prev_button',
 		fx: 'carousel',
-		slideCount: 3
+		slideCount: 5
 	});
 
 	$('.video_slide').cycle({
