@@ -357,20 +357,21 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 .main{
 	padding: 0 10px;
 }
-.slider{
+.slider_box{
 	border: 5px solid #eff0f2;
 	background: #fff;
 	width: 100%;
 	overflow: hidden;
 	padding: 9px 10px;
 	position: relative;
-	margin: 7px 20px 0;
+	margin: 7px 0 0;
 	box-shadow: 0 0 7px #8D8C8C;
 }
 .slider{
+	margin: 0 30px;
 }
-.slider.slider_three ul{
-	/*margin: 0 0 0 41px;*/
+.slider.slider_three {
+	margin: 0 48px;
 }
 .slider.slider_three{
 	padding: 5px 10px;
@@ -378,9 +379,8 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 .slider > div p{
 	line-height: 1;
 }
-.slider > div{
-	float: left;
-	margin: 0 0 0 11px;
+.slider .cycle-slide{
+	margin: 0 6px;
 
 }
 .slider > div a{
@@ -422,8 +422,8 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 	font-weight: bold;
 	font-size: 15px;
 }
-.slider a.prev_button,
-.slider a.next_button{
+.slider_box a.prev_button,
+.slider_box a.next_button{
 	position: absolute;
 	width: 26px;
 	height: 58px;
@@ -431,12 +431,12 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 	display: block;
 	background: url('../images/sprite.png') no-repeat;
 }
-.slider a.prev_button{
+.slider_box a.prev_button{
 	left: 11px;
 	background-position: -77px 0;
 	
 }
-.slider a.next_button{
+.slider_box a.next_button{
 	right: 11px;
 	background-position:  -43px 0;
 }
@@ -1240,30 +1240,28 @@ ul.services li p{
 	border: 1px solid #62615f;
 }
 .block_single_bottom .right_description .video_slide{
-	margin: 25px 0 0;
+	margin: 25px 15px 0;
+}
+.slide_box_video {
 	position: relative;
-	overflow: hidden;
 }
-.block_single_bottom .right_description .video_slide ul {
-	padding: 0 20px;
+.block_single_bottom .right_description .video_slide .cycle-slide{
+	margin: 0 3px;
 }
-.block_single_bottom .right_description .video_slide li{
-	float: left;
-}
-.block_single_bottom .right_description .video_slide > a{
+.block_single_bottom .right_description .slide_box_video > a{
 	background: url('../images/sprite.png') no-repeat;
 	display: block;
 	position: absolute;
 	top: 50%;
 	margin-top:-11px;
 }
-.block_single_bottom .right_description .video_slide .prev{
+.block_single_bottom .right_description .slide_box_video .prev{
 	background-position: -280px -114px;
 	width: 11px;
 	height: 23px;
 	left: 0;
 }
-.block_single_bottom .right_description .video_slide .next{
+.block_single_bottom .right_description .slide_box_video .next{
 	background-position: -308px -114px;
 	width: 11px;
 	height: 23px;
