@@ -364,33 +364,33 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 	overflow: hidden;
 	padding: 9px 10px;
 	position: relative;
-	margin: 7px 0 0;
+	margin: 7px 20px 0;
 	box-shadow: 0 0 7px #8D8C8C;
 }
-.slider ul{
-	margin: 0 0 0 28px;
+.slider{
 }
 .slider.slider_three ul{
-	margin: 0 0 0 41px;
+	/*margin: 0 0 0 41px;*/
 }
 .slider.slider_three{
 	padding: 5px 10px;
 }
-.slider ul li p{
+.slider > div p{
 	line-height: 1;
 }
-.slider ul li{
+.slider > div{
 	float: left;
 	margin: 0 0 0 11px;
+
 }
-.slider ul li a{
+.slider > div a{
 	display: block;
 	text-decoration: none;
 	text-align: center;
 	color: #f58805;
 	font-size: 14px;
 }
-.slider ul li a .img_apartment{
+.slider div a .img_apartment{
 	display: block;
 	border: 1px solid #c8c8c8;
 	padding: 8px 7px 5px 8px;
@@ -398,25 +398,25 @@ header .reg_menu_block ul.main_menu li:last-child a:after{
 	margin: 0 0 12px;
 	box-shadow: 0 2px 6px #C2B9B9;
 }
-.slider ul li a .img_apartment img{
+.slider div a .img_apartment img{
 	width: 149px;
 	height: 113px;
 	border: 1px solid #656462;
 	box-shadow: 1px 1px 0 #248acc;
 }
-.slider ul li a:hover .img_apartment{
+.slider div a:hover .img_apartment{
 	background: #fdba63;
 }
-.slider ul li a h2{
+.slider div a h2{
 	font-size: 13px;
 	margin: 0 0 4px;
 	font-weight: bold;
 }
-.slider ul li a p.address_city{
+.slider div a p.address_city{
 	color: #323232;
 	margin: 0 0 3px;
 }
-.slider ul li a p.price{
+.slider div a p.price{
 	font-style: italic;
 	letter-spacing: 1px;
 	font-weight: bold;
