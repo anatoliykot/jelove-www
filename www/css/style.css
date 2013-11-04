@@ -137,7 +137,6 @@ h5{
 	font-weight: bold;
 	color: #313f52;
 	border-radius: 7px;
-	width: 113px;
 	padding: 0;
 	cursor: pointer;
 	border: 1px solid #9dabb8;
@@ -1080,7 +1079,7 @@ ul.services li p{
 	font-weight: bold;
 	font-style: italic;
 }
-.block_single_top .price_button .view_phone{
+.block_single_top .price_button .view_phone a{
 	font-size: 12px;
 	text-decoration: underline;
 	font-style: italic;
@@ -1092,15 +1091,22 @@ ul.services li p{
 .block_single_bottom{
 	position: relative;
 	padding: 4px 10px 10px;
+	margin: 0 0 40px;
 }
 .block_single_bottom ul.single_page_tabs{
 	position: absolute;
 	top: -4px;
 	left: -4px;
 }
+.block_single_bottom ul.single_page_tabs li:first-child{
+	margin: 0;
+}
 .block_single_bottom ul.single_page_tabs li.active{
 	background: none;
 	border: none;
+}
+.block_single_bottom ul.single_page_tabs li.active:before{
+	content: none;
 }
 .block_single_bottom ul.single_page_tabs li:before{
 	content: '';
@@ -1164,29 +1170,126 @@ ul.services li p{
 	padding: 37px 0 0;
 	float: left;
 }
+.block_single_bottom .left_description .characteristics{
+	margin: 20px 0;
+}
+.block_single_bottom .left_description .characteristics h4{
+	margin: 0 0 20px;
+}
+.block_single_bottom .left_description .characteristics p{
+	padding: 0 0 0 10px;
+}
+.block_single_bottom .left_description .characteristics span{
+	color: #598aaa;
+	float: right;
+	font-weight: bold;
+	width: 40px;
+	text-align: center;
+}
 .block_single_bottom .right_description{
 	float: left;
 	width: 279px;
+}
+.block_single_bottom .right_description > p{
+	text-align: center;
 }
 .block_single_bottom .right_description .price{
 	color: #F88705;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: italic;
-	text-align: center;
 	margin: 0 0 9px;
 }
 .block_single_bottom .right_description .img_holder{
 	width: 100%;
-	height: 237px;
 	padding: 8px;
 	background: #eaf3f8;
 	box-shadow: 0 3px 4px #999;
 	border: 1px solid #cdcdcd;
 }
+.block_single_bottom .right_description .img_holder p{
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	color: #01253f;
+	font-weight: bold;
+	margin: 7px 0 0 10px;
+}
+.block_single_bottom .right_description .img_holder .count_photo a{
+	display: inline-block;
+	vertical-align: top;
+	background: url('../images/sprite.png') no-repeat;
+	width: 7px;
+	height: 14px;
+}
+.block_single_bottom .right_description .img_holder .count_photo a.prev{
+	background-position: -211px -119px;
+}
+.block_single_bottom .right_description .img_holder .count_photo a.prev:hover{
+	background-position: -212px -144px;
+}
+.block_single_bottom .right_description .img_holder .count_photo a.next{
+	background-position: -233px -144px;
+}
+.block_single_bottom .right_description .img_holder .count_photo a.next:hover{
+	background-position: -233px -119px;
+}
 .block_single_bottom .right_description .img_holder img{
 	box-shadow: 1px 1px 0 #0f7fc7;
 	border: 1px solid #62615f;
+}
+.block_single_bottom .right_description .video_slide{
+	margin: 25px 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.block_single_bottom .right_description .video_slide ul {
+	padding: 0 20px;
+}
+.block_single_bottom .right_description .video_slide li{
+	float: left;
+}
+.block_single_bottom .right_description .video_slide > a{
+	background: url('../images/sprite.png') no-repeat;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top:-11px;
+}
+.block_single_bottom .right_description .video_slide .prev{
+	background-position: -280px -114px;
+	width: 11px;
+	height: 23px;
+	left: 0;
+}
+.block_single_bottom .right_description .video_slide .next{
+	background-position: -308px -114px;
+	width: 11px;
+	height: 23px;
+	right: 0;
+}
+.block_single_bottom .right_description .contact_button{
+	margin: 20px 0 0;
+}
+.block_single_bottom .diagnosis{
+	margin:20px 0;
+	overflow: hidden;
+	float: left;
+}
+.block_single_bottom .diagnosis h4{
+	margin: 0 0 20px;
+}
+.block_single_bottom .diagnosis p{
+	font-size: 10px;
+}
+.block_single_bottom .share_button{
+	text-align: right;
+}
+.block_single_bottom .share_button li{
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 0 0 14px;
 }
 /* -------------- end Single ----------------- */
 
