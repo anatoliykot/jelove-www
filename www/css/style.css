@@ -1952,6 +1952,7 @@ a.contact_button i{
 
 .register_page button:focus,
 .register_page button:active{
+	cursor:pointer;
 	background: #d9dde0; /* Old browsers */
 	background: -moz-linear-gradient(top, #d9dde0 0%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9dde0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
