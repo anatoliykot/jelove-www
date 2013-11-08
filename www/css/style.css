@@ -666,6 +666,7 @@ ul.paginator_room li a.active{
 	box-shadow: 0 0 5px 1px #a2a2a2;
 	padding: 17px 10px;
 	background: #fff;
+	min-height: 300px;
 }
 .content_holder p{
 	line-height: 1.4;
