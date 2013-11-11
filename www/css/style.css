@@ -1740,17 +1740,33 @@ ul.services li p{
 }
 .list_search_result .list_apartment > ul > li{
 	width: 100%;
-	border: 5px solid #eeeff1;
-	background: #fff;
+	padding: 5px;
+	background: #eeeff1;
 	box-shadow: 0 0 5px 1px #A2A2A2;
 	margin: 0 0 13px;
-	padding: 10px 8px 1px;
 	position: relative;
-	overflow: hidden;
 }
+.list_search_result .list_apartment > ul > li .list_apart_holder{
+	padding: 10px 8px 8px;
+	background: #fff;
+}
+.list_search_result .list_apartment > ul > li.premium_apart{
+	background: url('../images/bg_premium_apart.png') repeat;
+}
+
+.list_search_result .list_apartment > ul > li.best_offer:before{
+	background: url('../images/sprite.png') no-repeat -1px -213px;
+	width: 79px;
+	height: 78px;
+	position: absolute;
+	top: -6px;
+	content: '';
+	left: -8px;
+}
+
 .list_search_result .list_apartment li p.time_add{
 	position: absolute;
-	right: 6px;
+	right: 10px;
 	top: 7px;
 	font-size: 12px;
 	font-style: italic;
