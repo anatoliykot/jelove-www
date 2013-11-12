@@ -153,9 +153,10 @@ h5{
 }
 .search_button span{
 	border-right: 1px solid #9dabb8;
-	padding: 7px 11px 5px 14px;
+	padding: 7px 10px 5px 13px;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 13px;
 }
 .search_button i{
 	border-left: 1px solid #fff;
@@ -1409,6 +1410,11 @@ ul.services li p{
 .sidebar aside ul.list_news li a.link_title{
 	margin: 0 0 6px;
 }
+
+.sidebar .site_proposal{
+	margin-bottom:25px;
+}
+
 .sidebar aside.social{
 	box-shadow: none;
 }
